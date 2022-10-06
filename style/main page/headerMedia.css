@@ -1,0 +1,36 @@
+@media(prefers-color-scheme: dark) {
+    :root {
+        --black: #313131;
+        --white: #fff;
+        --blackDark: #0C0C0C;
+    }
+    
+    body {
+        background: var(--black);
+    }
+    
+    .prenav {
+        background: var(--blackDark);
+    }
+    
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* ADAPTIVE START */
+
+@media(min-width: 1000px) {
+    .container {
+        padding: 0 30px !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .burger__btn {
+        display: flex;
+    }
+    .prenav__menu {
+        display: none;
+    }
+}
+
+/* ADAPTIVE END */
