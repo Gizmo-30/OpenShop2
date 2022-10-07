@@ -12,6 +12,18 @@
     .prenav {
         background: var(--blackDark);
     }
+
+    .xmark {
+        color: var(--white);
+    }
+
+    .burger__menu {
+        background: var(--black);
+    }
+
+    .burger__content .link, .burger__content .toggle  {
+    color: var(--white);
+}
     
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -25,9 +37,10 @@
 }
 
 @media(max-width: 768px) {
-    .burger__btn {
+    .burger__btn-open {
         display: flex;
     }
+
     .prenav__menu {
         display: none;
     }
