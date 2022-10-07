@@ -77,7 +77,6 @@
     border-radius: 20%;
 }
 
-
 .xmark {
     font-size: 35px;
     color: var(--black);
@@ -87,7 +86,7 @@
     content: '\f00d';
 }
 
-/* BUREGER MENU END */
+/* BUREGER MENU ENDD */
 
 /* .toggle {
     position: relative;
