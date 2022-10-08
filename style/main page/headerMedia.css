@@ -46,16 +46,13 @@
         display: flex;
     }
 
-    .prenav__menu {
+    .prenav__menu, .nav {
         display: none;
     }
-    .prenav__nav {
+    .prenav__nav, .prenav__search {
         display: block;
     }
 
-    .nav {
-        display: none;
-    }
 
     .prenav__content {
         justify-content: space-between;
