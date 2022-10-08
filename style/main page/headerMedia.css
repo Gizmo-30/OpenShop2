@@ -22,10 +22,15 @@
     }
 
     .burger__content .link, .burger__content .toggle  {
-    color: var(--white);
+        color: var(--white);
+    }
+    
+    .logo::before {
+        content: url('../../images/logoD.png');
+    }    
 }
     
-}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* ADAPTIVE START */
@@ -43,6 +48,12 @@
 
     .prenav__menu {
         display: none;
+    }
+}
+@media(max-width: 1024px) {
+    .nav__content {
+        column-gap: 0;
+        justify-content: space-between;
     }
 }
 
