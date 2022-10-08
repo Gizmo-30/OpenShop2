@@ -18,6 +18,12 @@
     column-gap: 40px;
 }
 
+.prenav__btns {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
 .prenav__link, .prenav__li {
     color: var(--white);
 }
@@ -149,7 +155,7 @@
 }
 
 .prenav .logo::before {
-    content: url('../../images/logoNav.png');
+    content: url('../../images/logoNav.svg');
 }
 
 .nav__formSearch {
@@ -190,7 +196,7 @@
 
 .nav__searchicon {
     margin-right: 5px;
-    font-size: 20px;
+    font-size: 23px;
     color: var(--white);
 }
 
