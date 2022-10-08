@@ -159,7 +159,7 @@
 }
 
 .prenav .logo::before {
-    content: url('../../images/logoNav.svg');
+    content: url('../../images/logoNavSm.svg') !important;
 }
 
 .nav__formSearch {
