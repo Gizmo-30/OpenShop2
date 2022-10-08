@@ -65,4 +65,10 @@
     }
 }
 
+@media(max-width: 500px) {
+    .logo::before {
+        content: url('../../images/logoNavSm.svg') !important;
+    }
+}
+
 /* ADAPTIVE END */
