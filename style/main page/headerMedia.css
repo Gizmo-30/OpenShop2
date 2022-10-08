@@ -49,6 +49,17 @@
     .prenav__menu {
         display: none;
     }
+    .prenav__nav {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .prenav__content {
+        justify-content: space-between;
+    }
 }
 @media(max-width: 1024px) {
     .nav__content {
