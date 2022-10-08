@@ -86,7 +86,7 @@
 .burger__btn-open {
     display: none;
     flex-direction: column;
-    row-gap: 8px;
+    row-gap: 6px;
 }
 
 .burger__btn-close {
@@ -97,7 +97,7 @@
     display: block;
     content: '';
     height: 2px;
-    width: 30px;
+    width: 22px;
     background: #fff;
     border-radius: 20%;
 }
@@ -200,7 +200,7 @@
 
 .nav__searchicon {
     margin-right: 5px;
-    font-size: 23px;
+    font-size: 20px;
     color: var(--white);
 }
 
