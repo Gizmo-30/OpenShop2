@@ -167,7 +167,7 @@
 }
 
 .nav__search {
-    width: calc(200px + (440 - 50) * ((100vw - 320px) / (1920 - 320)));
+    width: calc(250px + (440 - 250) * ((100vw - 768px) / (1920 - 768)));
     padding: 16px 10px;
     border: 1px solid #313131;
     border-radius: 0;

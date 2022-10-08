@@ -5,7 +5,7 @@
         --blackDark: #0C0C0C;
     }
     
-    body {
+    body, .burger__menu, .nav__search {
         background: var(--black);
     }
     
@@ -13,21 +13,27 @@
         background: var(--blackDark);
     }
 
-    .xmark {
+    .nav__search {
+        color: var(--blackDark);
+    }
+
+    .nav__search::placeholder, .burger__content .link, .xmark  {
         color: var(--white);
     }
 
-    .burger__menu {
-        background: var(--black);
-    }
 
-    .burger__content .link, .burger__content .toggle  {
-        color: var(--white);
-    }
-    
     .logo::before {
         content: url('../../images/logoD.png');
     }    
+
+    .nav__submit, .nav__search {
+        border: 1px solid var(--white);
+    }
+    
+    .nav__search:focus {
+        background: var(--white);
+    }
+
 }
     
 
@@ -61,9 +67,9 @@
 }
 
 @media(max-width: 900px) {
-    .logo::before {
+    /* .logo::before {
         content: url('../../images/logoNavMl.svg') !important;
-    }
+    } */
 }
 
 @media(max-width: 1024px) {
