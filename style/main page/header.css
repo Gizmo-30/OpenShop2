@@ -165,9 +165,9 @@
 .nav__search {
     width: calc(250px + (440 - 250) * ((100vw - 768px) / (1920 - 768)));
     padding: 16px 10px;
-    border: 1px solid #313131;
+    border: 1px solid var(--black);
     border-radius: 0;
-    color: #BBBBBB;
+    color: var(--black);
     outline: none;
     transition: 0.5s;
 }
