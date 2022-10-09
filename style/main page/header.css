@@ -109,6 +109,44 @@
 
 /* BUREGER MENU END */
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* SEARCHpANEL START */
+
+.searchPanel {
+    display: flex;
+    flex-grow: 1;
+}
+
+.prenav .nav__search {
+    width: 100%;
+    opacity: 0;
+    padding: 10px 10px;
+    
+}
+
+.searchPanel {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+.searchPanel__btn-close::before {
+    content: '\f060';
+}
+
+.searchPanel__btn-close {
+    color: var(--white);
+    font-size: 20px;
+    opacity: 0;
+    transition: 4s;
+}
+
+
+/* SEARCHpANEL END */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
 /* .toggle {
     position: relative;
 }
@@ -169,7 +207,7 @@
     border-radius: 0;
     color: var(--black);
     outline: none;
-    transition: 0.5s;
+    transition: 1.5s;
 }
 
 .nav__search:focus {
