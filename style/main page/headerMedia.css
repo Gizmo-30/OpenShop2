@@ -23,7 +23,7 @@
 
 
     .logo::before {
-        content: url('../../images/logoD.png');
+        content: url('../../images/LogoD.svg');
     }    
 
     .nav__submit, .nav__search {
@@ -41,20 +41,8 @@
 
 /* ADAPTIVE START */
 
-@media(min-width: 1000px) {
-    .container {
-        padding: 0 30px !important;
-    }
-}
-
-@media(max-width: 900px) {
-    .logo::before {
-        content: url('../../images/logoNavMd.svg') !important;
-    }
-}
-
 @media(max-width: 768px) {
-    .burger__btn-open {
+    .prenav__btns {
         display: flex;
     }
 
@@ -72,19 +60,23 @@
 
 }
 
+@media(min-width: 1024px) {
+    .container {
+        padding: 0 30px !important;
+    }
+}
 
 @media(max-width: 1024px) {
     .nav__content {
         column-gap: 0;
         justify-content: space-between;
     }
+    .logo {
+        transform: scale(0.8);
+    }
 }
 
-@media(max-width: 500px) {
-    /* .logo::before {
-        content: url('../../images/logoNavSm.svg') !important;
-    } */
-
+@media(max-width: 600px) {
     .prenav {
         padding: 10px 0;
     }

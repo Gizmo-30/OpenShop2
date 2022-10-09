@@ -19,7 +19,7 @@
 }
 
 .prenav__btns {
-    display: flex;
+    display: none;
     column-gap: 10px;
     align-items: center;
 }
@@ -47,10 +47,6 @@
 }
 
 .prenav__nav {
-    display: none;
-}
-
-.prenav__search {
     display: none;
 }
 
@@ -84,7 +80,7 @@
 }
 
 .burger__btn-open {
-    display: none;
+    display: flex;
     flex-direction: column;
     row-gap: 6px;
 }
@@ -155,7 +151,7 @@
 }
 
 .logo::before {
-    content: url('../../images/logoL.png');
+    content: url('../../images/LogoL.svg');
 }
 
 .prenav .logo::before {
