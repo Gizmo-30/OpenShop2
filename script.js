@@ -5,7 +5,7 @@ const openBtn = document.querySelector('.burger__btn-open'),
     searchOpen = document.querySelector('.prenav .nav__searchicon'),
     prenavNav = document.querySelector('.prenav__nav'),
     prenavContent = document.querySelector('.prenav__content'),
-    searchPanel = document.querySelector('.prenav .nav__search'),
+    searchPanel = document.querySelector('.searchPanel'),
     searchClose = document.querySelector('.searchPanel__btn-close');
 
 
@@ -13,6 +13,7 @@ width = burgerMenu.clientWidth
 
 openBtn.addEventListener('click', () => {
     burgerMenu.style = `right: 0`
+    FuncClose()
 })
 
 closeBtn.addEventListener('click', () => {
@@ -20,15 +21,23 @@ closeBtn.addEventListener('click', () => {
 })
 
 searchOpen.addEventListener('click', () => {
-    prenavNav.style = `display: none;`
-    prenavContent.style = `justify-content: end;`
-    searchPanel.style = `opacity: 1;`
-    searchClose.style = `opacity: 1;`
+    FuncOpen()
 })
 
-searchClose.addEventListener('click', () => {
-    prenavNav.style = `display: block;`
-    prenavContent.style = `justify-content: space-between;`
-    searchPanel.style = `opacity: 0;`
-    searchClose.style = `opacity: 0;`    
+searchClose.addEventListener('click', (e) => {
+    FuncClose()
 })
+
+function FuncClose() {
+    prenavNav.style = `display: block;`;
+    searchPanel.style = `display: none;`;
+    prenavContent.style = `justify-content: space-between;`;
+    return;
+}
+
+function FuncOpen() {
+    prenavNav.style = `display: none;`;
+    searchPanel.style = `display: flex;`;
+    prenavContent.style = `justify-content: end;`;
+    return;
+}

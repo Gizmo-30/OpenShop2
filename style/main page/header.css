@@ -120,15 +120,13 @@
 
 .prenav .nav__search {
     width: 100%;
-    opacity: 0;
     padding: 10px 10px;
-    
 }
 
 .searchPanel {
-    display: flex;
     align-items: center;
     column-gap: 7px;
+    display: none;
 }
 .searchPanel__btn-close::before {
     content: '\f060';
@@ -137,8 +135,6 @@
 .searchPanel__btn-close {
     color: var(--white);
     font-size: 20px;
-    opacity: 0;
-    transition: 4s;
 }
 
 
@@ -207,7 +203,6 @@
     border-radius: 0;
     color: var(--black);
     outline: none;
-    transition: 1.5s;
 }
 
 .nav__search:focus {
