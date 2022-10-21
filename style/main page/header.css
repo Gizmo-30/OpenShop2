@@ -143,29 +143,6 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
-/* .toggle {
-    position: relative;
-}
-.toggle__content {
-    position: absolute;
-    left: 0;
-    background: #FFFFFF;
-    
-}
-.toggle__option {
-    display: inline-block;
-    color: #ABABAB;
-    padding: 5px 15px;
-}
-
-.toggle__option:nth-of-type(1)::after {
-    display: block;
-    content: '';
-    height: 1px;
-    width: 70px;
-    background: var(--black);
-} */
-
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -236,30 +213,38 @@
 
 /* NAV END */
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-.menu__content {
-    padding: 10px 0;
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* MENU START */
+
+.menu {
+    margin: 10px 0;
+}
+
+.menu__list {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main__content {
+    display: flex;
+    justify-content: center;
 }
 
 .menu__link {
+    color: var(--black);
     font-size: 18px;
+    line-height: 30px;
     letter-spacing: 0.05em;
-    color: var(--preimary-color);
-    margin-right: 40px;
+    font-family: var(--nos-regular);
 }
 
-.menu__li:nth-of-type(6) .menu__link {
-    margin-right: 0;
-}
-
-.menu__ul {
-    padding: 0;
-}
-
-.dm2 {
-    padding: 17px 32px;
-    border-radius: 0;
-}
+/* MENU END */
 
 
 .dropdown__title {
