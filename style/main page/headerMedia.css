@@ -13,11 +13,11 @@
         background: var(--blackDark);
     }
 
-    .nav__search {
+    .nav__search, .dropItems:hover {
         color: var(--blackDark);
     }
 
-    .nav__search::placeholder, .burger__content .link, .xmark  {
+    .nav__search::placeholder, .burger__content .link, .xmark, .menu__link, .dropDown__title, .dropItems  {
         color: var(--white);
     }
 
@@ -30,9 +30,11 @@
         border: 1px solid var(--white);
     }
     
-    .nav__search:focus {
+    .nav__search:focus, .dropDown__title::after, .dropItems:hover {
         background: var(--white);
     }
+
+    
 
 }
     
