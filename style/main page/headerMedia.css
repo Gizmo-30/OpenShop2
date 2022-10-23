@@ -30,7 +30,7 @@
         border: 1px solid var(--white);
     }
     
-    .nav__search:focus {
+    .nav__search:focus, .nav__search:focus {
         background: var(--white);
     }
 
