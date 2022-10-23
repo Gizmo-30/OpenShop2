@@ -13,11 +13,11 @@
         background: var(--blackDark);
     }
 
-    .nav__search, .dropItems:hover {
+    .nav__search {
         color: var(--blackDark);
     }
 
-    .nav__search::placeholder, .burger__content .link, .xmark, .menu__link, .dropDown__title, .dropItems  {
+    .nav__search::placeholder, .burger__content .link, .xmark, .menu__link {
         color: var(--white);
     }
 
@@ -30,7 +30,7 @@
         border: 1px solid var(--white);
     }
     
-    .nav__search:focus, .dropDown__title::after, .dropItems:hover {
+    .nav__search:focus {
         background: var(--white);
     }
 
@@ -59,6 +59,21 @@
     .prenav__content {
         justify-content: space-between;
     }
+
+    .menu__list {
+        display: block;
+    }
+    .menu__list>li {
+        margin: 0 0 10px 0;
+    }
+
+    .dropDown__content {
+        position: relative;
+        left: 0;
+        top: 0;
+        padding: 0;
+    }
+
 
 }
 
