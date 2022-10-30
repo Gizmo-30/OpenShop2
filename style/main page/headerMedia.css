@@ -48,7 +48,7 @@
         display: flex;
     }
 
-    .prenav__menu, .nav {
+    .prenav__menu, .nav, .menu {
         display: none;
     }
     .prenav__nav, .prenav__search {

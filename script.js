@@ -5,8 +5,11 @@ const openBtn = document.querySelector('.burger__btn-open'),
     searchOpen = document.querySelector('.prenav .nav__searchicon'),
     prenavNav = document.querySelector('.prenav__nav'),
     prenavContent = document.querySelector('.prenav__content'),
+    prenavLi = document.querySelectorAll('.burger__menu .prenav__li'),
     searchPanel = document.querySelector('.searchPanel'),
-    searchClose = document.querySelector('.searchPanel__btn-close');
+    searchClose = document.querySelector('.searchPanel__btn-close'),
+    linkInBurger = document.querySelector('.burger__menu .menu__link'),
+    menu = document.querySelector('.menu');
 
 
 width = burgerMenu.clientWidth
@@ -42,6 +45,7 @@ function FuncOpen() {
     return;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 let isMobile = {
     Android: function () { return navigator.userAgent.match(/Android/i); },
@@ -53,20 +57,34 @@ let isMobile = {
 };
 
 let body = document.querySelector('body'),
-    arrow = document.querySelectorAll('.arrow');
+    dropDowns = document.querySelectorAll('.menu .menu__link'),
+    arrows = document.querySelectorAll('.arrow'),
+    icon = document.querySelector('.prenav-menuicon');
 
 if (isMobile.any()) {
     body.classList.add('touch')
-    for (i = 0; i < arrow.length; i++) {
-        let subMenu = arrow[i].nextElementSibling,
-            thisLink = arrow[i].previousElementSibling,
-            thisArrow = arrow[i];
-        thisLink.classList.add('active')
-        arrow[i].addEventListener('click', function () {
-            subMenu.classList.toggle('open')
-            thisArrow.classList.toggle('active')
+
+    dropDowns.forEach(element => {
+        element.addEventListener('click', (e) => {
+            e.preventDefault()
+            dropDowns.forEach(item => {
+                item.classList.remove('open')
+            });
+            element.classList.add('open')
+            window.addEventListener('click', (e) => {
+                if (e.target != element) {
+                    element.classList.remove('open')
+                } 
+            })
         })
-    }
+    });
 } else {
     body.classList.add('mouse')
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+linkInBurger.addEventListener('click', () => {
+    linkInBurger
+})
