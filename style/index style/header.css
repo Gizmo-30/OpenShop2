@@ -410,7 +410,7 @@ body.mouse .dropDown__title:hover::after{
 /* SLIDER START */
 
 .slider {
-    padding: 70px 0;
+    padding: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320))) 0;
     overflow: hidden;
 }
 
@@ -436,8 +436,8 @@ body.mouse .dropDown__title:hover::after{
 
 .slider__title {
     color: var(--black);
-    line-height: 70px;
-    font-size: 46px;
+    line-height: calc(45px + (70 - 45) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(28px + (46 - 28) * ((100vw - 320px) / (1920 - 320)));
     letter-spacing: 0.05em;
     font-family: var(--nos-medium);
     max-width: 550px;

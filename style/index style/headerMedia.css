@@ -102,15 +102,31 @@
         padding: 10px 0;
     }
 }
-
-@media(max-width: 500px) {
+@media(max-width: 768px) {
     .slider__item {
         flex-direction: column;
     }
 
+    .slider__indicators {
+        padding-top: 25px;
+    }
+
+    .slider__btn {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 500px) {
+
     .slider__title {
         line-height: 50px;
         font-size: 36px;
+    }
+}
+@media(max-width: 426px) {
+    .slider__btn {
+        width: 90%;
     }
 }
 
