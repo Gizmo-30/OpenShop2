@@ -85,6 +85,55 @@ if (isMobile.any()) {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
-linkInBurger.addEventListener('click', () => {
-    linkInBurger
+
+/* >>>>>>>>>>>>>>>>>>>>>>>...... */
+
+/* SLIDER START */
+
+
+class Slider {
+    constructor(obj) {
+        this.slider = document.querySelector(obj.slider)
+        this.track = this.slider.querySelector(obj.track)
+        this.slides = [...this.track.children]
+        this.indicator = this.slider.querySelectorAll(obj.indicator)
+        this.width = this.slider.clientWidth
+
+        this.slides.forEach((slide, i) => {
+            slide.style = `min-width: ${this.width}px;`
+        });
+
+    
+        this.move()
+    }
+
+    move() {
+        this.indicator.forEach((item, i) => {
+            item.addEventListener('click', () => {
+                this.track.style = `transform: translateX(-${this.width * i}px)`
+                this.clearClass(this.indicator)
+                item.classList.toggle('active')
+            })
+        });
+
+    }
+
+    clearClass(array) {
+        array.forEach(element => {
+            element.classList.remove('active')
+        });
+    
+    }
+}
+
+const slider = new Slider({
+    slider: '.slider',
+    track: '.slider__track',
+    indicator: '.indicator',
 })
+
+console.log(slider);
+
+/* SLIDER END */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>...... */

@@ -13,11 +13,11 @@
         background: var(--blackDark);
     }
 
-    .nav__search {
+    .nav__search, .slider__btn:hover, .nav__submit:hover, .nav__submit:hover .nav__searchicon {
         color: var(--blackDark);
     }
 
-    .nav__search::placeholder, .burger__content .link, .xmark, .menu__link {
+    .nav__search::placeholder, .burger__content .link, .xmark, .menu__link, .slider__title {
         color: var(--white);
     }
 
@@ -26,11 +26,11 @@
         content: url('../../images/LogoD.svg');
     }    
 
-    .nav__submit, .nav__search {
+    .nav__submit, .nav__search, .slider__btn {
         border: 1px solid var(--white);
     }
     
-    .nav__search:focus, .nav__search:focus {
+    .nav__search:focus, .nav__search:focus, .indicator.active, .slider__btn:hover, .nav__submit:hover {
         background: var(--white);
     }
 

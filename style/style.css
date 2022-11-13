@@ -1,6 +1,6 @@
 @import 'fonts.css';
-@import 'main page/header.css';
-@import 'main page/headerMedia.css'; 
+@import 'index style/header.css';
+@import 'index style/headerMedia.css'; 
 
 * {
     padding: 0;
@@ -14,6 +14,8 @@
     --black: #313131;
     --white: #ffffff;
     --blackDark: #0C0C0C;
+    --indicatorActive: #313131;
+    --indicator: #ABABAB;
     --nos-light: 'noto-sans-light';
     --nos-medium: 'noto-sans-medium';
     --nos-regular: 'noto-sans-regular';
