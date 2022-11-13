@@ -425,20 +425,19 @@ body.mouse .dropDown__title:hover::after{
 .slider__track { 
     display: flex;
     transition: 1s;
-    transform: translateX();
 }
 
 .slider__about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 121px;
+    row-gap:  calc(30px + (121 - 30) * ((100vw - 400px) / (1920 - 400)));
 }
 
 .slider__title {
     color: var(--black);
     line-height: 70px;
-    font-size: 48px;
+    font-size: 46px;
     letter-spacing: 0.05em;
     font-family: var(--nos-medium);
     max-width: 550px;
